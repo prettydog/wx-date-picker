@@ -1,0 +1,37 @@
+<view class='drawer_screen' wx:if="{{showPicker}}"></view>
+<view animation='{{animation}}' class='picker-page' wx:if="{{showPicker}}">
+  <view class='btn-p'>
+    <text catchtouchend='cancel' class='cancel'>取消</text>
+    <text catchtouchend='confirm' class='confirm'>确定</text>
+  </view>
+  <picker-view style='float:left' bindchange='year_onChange' value='{{sYearPos}}'>
+    <picker-view-column>
+      <view wx:for="{{years}}" wx:key="*this" style="line-height: 50px">{{item}}</view>
+    </picker-view-column>
+  </picker-view>
+  <picker-view style='float:left' bindchange='month_onChange' value='{{sMonthPos}}'>
+    <picker-view-column>
+      <view wx:for="{{months}}" wx:key="*this" style="line-height: 50px">{{item}}月</view>
+    </picker-view-column>
+  </picker-view>
+  <picker-view style='float:left' bindchange='day_onChange' value='{{sDayPos}}'>
+    <picker-view-column>
+      <view wx:for="{{days}}" wx:key="*this" style="line-height: 50px">{{item}}日</view>
+    </picker-view-column>
+  </picker-view>
+  <picker-view style='float:left;border-left:1px solid #ddd;' bindchange='year_onChange1' value='{{eYearPos}}'>
+    <picker-view-column>
+      <view wx:for="{{years}}" wx:key="*this" style="line-height: 50px">{{item}}</view>
+    </picker-view-column>
+  </picker-view>
+  <picker-view style='float:left' bindchange='month_onChange1' value='{{eMonthPos}}'>
+    <picker-view-column>
+      <view wx:for="{{months}}" wx:key="*this" style="line-height: 50px">{{item}}月</view>
+    </picker-view-column>
+  </picker-view>
+  <picker-view style='float:left' bindchange='day_onChange1' value='{{eDayPos}}'>
+    <picker-view-column>
+      <view wx:for="{{days1}}" wx:key="*this" style="line-height: 50px">{{item}}日</view>
+    </picker-view-column>
+  </picker-view>
+</view>

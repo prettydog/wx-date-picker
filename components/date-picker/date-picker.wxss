@@ -1,0 +1,48 @@
+picker-view-column view{
+  text-align: center;
+  line-height: 34px !important;
+}
+picker-view{
+  height:300px;
+  width: 16%;
+}
+/*mask*/
+.drawer_screen { 
+ width: 100%; 
+ height: 100%; 
+ position: fixed; 
+ top: 0; 
+ left: 0; 
+ z-index: 1000; 
+ background: #000; 
+ opacity: 0.5; 
+ overflow: hidden; 
+} 
+.picker-page{
+  position: fixed;
+  height: 300px;
+  width: 100%;
+  bottom: 0px;
+  z-index: 1000;
+  background-color: #fff;
+}
+.btn-p{
+  height: 70rpx;
+  line-height: 70rpx;
+  vertical-align: middle;
+  border-bottom: 1px solid #ddd;
+}
+/* button:nth-child(0){
+  float: left
+} */
+.cancel{
+  width: 10%;
+  margin-left: 5%;
+  color: #ccc;
+}
+.confirm{
+  width: 10%;
+  float: right;
+  margin-right: 5%;
+  color: #1aad19;
+}

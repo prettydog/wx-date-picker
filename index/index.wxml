@@ -1,0 +1,11 @@
+<view>
+  <button bindtap='showDatePicker'>hhh</button>
+  {{choose}}
+  <date-picker
+    id="date-picker"
+    start="{{start}}" 
+    end="{{end}}" 
+    isShow="{{datePickerIsShow}}"
+    bindconfirm="datePickerOnSureClick"
+    bindcancel="datePickerOnCancelClick" />
+</view>
